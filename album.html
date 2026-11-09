@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="走進一張專輯的創作背景、推薦歌曲與聲音細節。">
+    <meta name="theme-color" content="#f3eee4">
+    <title>專輯故事｜Album Corner</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/shared.js"></script>
+    <script defer src="assets/js/detail.js"></script>
+  </head>
+  <body class="detail-page">
+    <a class="skip-link" href="#main">跳至主要內容</a>
+    <header class="site-header page-width">
+      <a class="brand" href="index.html" aria-label="Album Corner，回首頁"><span class="brand-record" aria-hidden="true"></span><span class="brand-name">Album Corner<small>A CORNER FOR EVERY ALBUM</small></span></a>
+      <nav class="header-nav" aria-label="主要導覽"><a href="index.html#collection">← 回到專輯收藏</a></nav>
+    </header>
+    <main id="main" class="detail-main page-width" aria-busy="true">
+      <div class="detail-status collection-state" id="detail-state" role="status" aria-live="polite">
+        <div class="empty-art" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div><p class="eyebrow" id="detail-state-kicker">ONE MOMENT</p><h1 id="detail-state-title">正在取出這張專輯</h1><p id="detail-state-description">稍等一下，故事即將開始。</p><div class="state-actions"><button class="button button-outline" id="detail-retry" type="button" hidden>重新載入</button><a class="text-link" href="index.html#collection">回到專輯收藏 <span aria-hidden="true">↗</span></a></div></div>
+      </div>
+      <article id="album-content" hidden>
+        <header class="album-overview" id="overview">
+          <div class="detail-cover" id="detail-cover"></div>
+          <div class="overview-copy"><p class="eyebrow">FROM THE COLLECTION <span id="album-year"></span></p><h1 id="album-title"></h1><p class="album-artist" id="album-artist"></p><p class="album-summary" id="album-summary"></p><a class="button button-accent" href="#recommended">從推薦歌曲開始 <span aria-hidden="true">↓</span></a></div>
+        </header>
+        <nav class="album-nav" aria-label="專輯內容導覽"><a href="#features">音樂特色</a><a href="#recommended">推薦歌曲</a><a href="#story">創作故事</a><a href="#analysis">音樂分析</a><a href="#tracks">完整曲目</a><a href="#listening">聆聽與來源</a></nav>
+        <div class="detail-layout">
+          <aside class="album-margin" aria-hidden="true"><span>LINER NOTES</span><span>慢慢讀，也慢慢聽。</span></aside>
+          <div class="album-sections">
+            <section class="detail-section" id="features"><div class="detail-section-heading"><span>01</span><h2>這張專輯的聲音</h2></div><div class="genre-tags" id="album-genres"></div></section>
+            <section class="detail-section" id="recommended"><div class="detail-section-heading"><span>02</span><h2>從這幾首開始聽</h2></div><div class="recommendations" id="recommended-tracks"></div></section>
+            <section class="detail-section" id="story"><div class="detail-section-heading"><span>03</span><h2>創作背景與概念</h2></div><div class="prose"><h3>故事的起點</h3><div id="album-background"></div><h3>專輯想說的話</h3><div id="album-concept"></div></div></section>
+            <section class="detail-section" id="analysis"><div class="detail-section-heading"><span>04</span><h2>再靠近聲音一點</h2></div><div class="prose" id="album-analysis"></div></section>
+            <section class="detail-section" id="tracks"><div class="detail-section-heading"><span>05</span><h2>完整曲目</h2></div><ol class="track-list" id="album-tracks"></ol></section>
+            <section class="detail-section" id="listening"><div class="detail-section-heading"><span>06</span><h2>把這張專輯放下去聽</h2></div><ul class="listen-links" id="album-links"></ul></section>
+            <section class="detail-section sources-section" id="sources"><div class="detail-section-heading"><span>07</span><h2>資料來源</h2></div><ul class="source-links" id="album-sources"></ul></section>
+          </div>
+        </div>
+        <div class="detail-back"><p>下一張，會聽見什麼？</p><a class="button button-outline" href="index.html#collection">← 回到專輯收藏</a></div>
+      </article>
+      <noscript><p class="notice">請啟用 JavaScript，以閱讀專輯內容。<a href="index.html">返回首頁</a></p></noscript>
+    </main>
+    <footer class="site-footer page-width"><a href="index.html" class="footer-brand">Album Corner <span>ALBUMS & STORIES</span></a><p>把時間留給一張好專輯。</p><a href="#main">回到頂端 ↑</a></footer>
+  </body>
+</html>
